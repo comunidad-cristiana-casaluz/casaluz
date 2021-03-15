@@ -1,7 +1,7 @@
 {
-  "name": "casaluz",
+  "name": "home",
   "version": "0.1.0",
-  "homepage": "https://comunidad-cristiana-casaluz.github.io/casaluz/",
+  "homepage": "https://comunidad-cristiana-casaluz.github.io/home/",
   "private": true,
   "dependencies": {
     "@date-io/date-fns": "^2.10.8",
