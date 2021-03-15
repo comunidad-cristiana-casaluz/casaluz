@@ -36,61 +36,61 @@ function Routing(props) {
       ))}
       <PropsRoute
         exact
-        path="/blog"
+        path="/casaluz/blog"
         component={Blog}
         selectBlog={selectBlog}
         blogPosts={blogPosts}
       />
       <PropsRoute
         exact
-        path="/niños"
+        path="/casaluz/niños"
         component={Niños}
         selectNiños={selectNiños}
       />
       <PropsRoute
         exact
-        path="/casasLuz"
+        path="/casaluz/casasLuz"
         component={CasasLuz}
         selectCasasLuz={selectCasasLuz}
       />
       <PropsRoute
         exact
-        path="/acercade"
+        path="/casaluz/acercade"
         component={AcercaDe}
         selectAcercaDe = {selectAcercaDe}
       />
       <PropsRoute
         exact
-        path="/hombres"
+        path="/casaluz/hombres"
         component={Hombres}
         selectHombres={selectHombres}
       />
       <PropsRoute
         exact
-        path="/mujeres"
+        path="/casaluz/mujeres"
         component={Mujeres}
         selectMujeres={selectMujeres}
       />
 
       <PropsRoute
         exact
-        path="/jovenes"
+        path="/casaluz/jovenes"
         component={Jovenes}
         selectJovenes={selectJovenes}
       />
       <PropsRoute
         exact
-        path="/cursos"
+        path="/casaluz/cursos"
         component={Cursos}
         selectCursos={selectCursos}
       />
       <PropsRoute
         exact
-        path="/matrimonios"
+        path="/casaluz/matrimonios"
         component={Matrimonios}
         selectMatrimonios={selectMatrimonios}
       />
-      <PropsRoute path="/" component={Home} selectHome={selectHome} />
+      <PropsRoute path="/casaluz" component={Home} selectHome={selectHome} />
     </Switch>
   );
 }

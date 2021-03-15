@@ -52,48 +52,48 @@ function NavBar(props) {
   } = props;
   const menuItems = [
     {
-      link: "/",
+      link: "/casaluz",
       name: "Inicio"
     },
     {
-      link: "/acercade",
+      link: "/casaluz/acercade",
       name: "Acerca de LPN"
     },
     {
-      link: "/casasLuz",
+      link: "/casaluz/casasLuz",
       name: "Casas de luz"
     },
     {
       name: "Ministerios",
       list: [
         {
-          link: '/niños',
+          link: '/casaluz/niños',
           name: "Niños"
         },
         {
-          link: '/jovenes',
+          link: '/casaluz/jovenes',
           name: "Jovenes"
         },
         {
-          link: '/mujeres',
+          link: '/casaluz/mujeres',
           name: "Mujeres"
         },
         {
-          link: '/hombres',
+          link: '/casaluz/hombres',
           name: "Hombres"
         },
         {
-          link: '/matrimonios',
+          link: '/casaluz/matrimonios',
           name: "Matrimonios"
         },
       ]
     },
     {
-      link: "/blog",
+      link: "/casaluz/blog",
       name: "Blog"
     },
     {
-      link: "/cursos",
+      link: "/casaluz/cursos",
       name: "Cursos"
     }
     // {
