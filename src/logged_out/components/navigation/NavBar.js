@@ -56,44 +56,44 @@ function NavBar(props) {
       name: "Inicio"
     },
     {
-      link: "/casaluz/acercade",
+      link: "/acercade",
       name: "Acerca de LPN"
     },
     {
-      link: "/casaluz/casasLuz",
+      link: "/casasLuz",
       name: "Casas de luz"
     },
     {
       name: "Ministerios",
       list: [
         {
-          link: '/casaluz/niños',
+          link: '/niños',
           name: "Niños"
         },
         {
-          link: '/casaluz/jovenes',
+          link: '/jovenes',
           name: "Jovenes"
         },
         {
-          link: '/casaluz/mujeres',
+          link: '/mujeres',
           name: "Mujeres"
         },
         {
-          link: '/casaluz/hombres',
+          link: '/hombres',
           name: "Hombres"
         },
         {
-          link: '/casaluz/matrimonios',
+          link: '/matrimonios',
           name: "Matrimonios"
         },
       ]
     },
     {
-      link: "/casaluz/blog",
+      link: "/blog",
       name: "Blog"
     },
     {
-      link: "/casaluz/cursos",
+      link: "/cursos",
       name: "Cursos"
     }
     // {
