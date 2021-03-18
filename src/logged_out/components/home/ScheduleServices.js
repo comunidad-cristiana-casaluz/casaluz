@@ -2,7 +2,8 @@ import React from "react";
 import {
   Typography,
   isWidthUp,
-  GridListTile
+  GridListTile,
+  GridListTileBar
 } from "@material-ui/core"
 import { makeStyles } from '@material-ui/core/styles'
 import Carousel from 'react-grid-carousel'
@@ -108,7 +109,7 @@ export default function ScheduleServices(props) {
                 <Carousel.Item key={tile.img}>
                     <GridListTile  style={{listStyle:'none'}}>
                         <img width="100%" src={`${process.env.PUBLIC_URL + tile.img}`} alt={tile.title} />
-                        {/* <GridListTileBar
+                         <GridListTileBar
                             classes={{
                                 root: classes.titleBar,
                                 title: classes.title,
@@ -117,7 +118,7 @@ export default function ScheduleServices(props) {
                             style={{height:'30%'}}
                             title= {<Typography variant='h4'>{tile.title}</Typography>}
                             subtitle={<Typography variant='h5'>{tile.body}</Typography>}
-                        /> */}
+                        /> 
                     </GridListTile>
               </Carousel.Item>
             ))
