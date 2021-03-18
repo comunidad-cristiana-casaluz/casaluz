@@ -75,7 +75,7 @@ const socialIcons = [
     {
       icon: (<i className="fa fa-facebook" aria-hidden="true"></i>),
       label: "Facebook",
-      href: "https://www.facebook.com/misionluzparalasnaciones"
+      href: "https://www.facebook.com/casaluzparalasnaciones"
     },
     {
       icon: (<i className="fa fa-instagram" aria-hidden="true"></i>),

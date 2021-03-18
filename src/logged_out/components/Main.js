@@ -12,6 +12,7 @@ import dummyBlogPosts from "../dummy_data/blogPosts";
 import DialogSelector from "./register_login/DialogSelector";
 import Routing from "./Routing";
 import smoothScrollTop from "../../shared/functions/smoothScrollTop";
+import createWhatsappLink from "../../shared/functions/createWhatsappLink";
 
 AOS.init({ once: true });
 
@@ -21,7 +22,6 @@ const styles = (theme) => ({
     overflowX: "hidden",
   },
 });
-
 
 function Main(props) {
   const { classes } = props;
@@ -92,9 +92,9 @@ function Main(props) {
     setSelectedTab("Cursos");
   }, [setSelectedTab]);
 
-  const selectAcercaDe = useCallback(() => {
+  const selectQuienesSomos = useCallback(() => {
     smoothScrollTop();
-    document.title = "Casa Luz - Sobre nosotros";
+    document.title = "Casa Luz - Quienes somos";
     setSelectedTab("Acerca de LPN");
   }, [setSelectedTab]);
   
@@ -194,9 +194,13 @@ function Main(props) {
         selectNiños={selectNiños}
         selectMujeres={selectMujeres}
         selectCursos={selectCursos}
-        selectAcercaDe={selectAcercaDe}
+        selectQuienesSomos={selectQuienesSomos}
       />
-        <Fab aria-label="Expand" style = {{margin:'20px',backgroundColor:'#25d366', color:'white', position: 'fixed',zIndex: 1000, right: '6px', btn:'60px', bottom: '6px'}}>
+        <Fab
+              href= {createWhatsappLink(987207569, "Hola Comunidad Cristiana Casa Luz, quisiera contactarme con ustedes." )}
+              target="_blank"
+              aria-label="Expand"
+              style = {{margin:'20px',backgroundColor:'#25d366', color:'white', position: 'fixed',zIndex: 1000, right: '6px', btn:'60px', bottom: '6px'}}>
           <WhatsAppIcon fontSize="large"/>
         </Fab>
         

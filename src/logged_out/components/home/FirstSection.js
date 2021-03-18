@@ -1,7 +1,6 @@
-import { Parallax } from "react-parallax";
+import { Parallax  } from "react-parallax";
 import {
     Typography,
-    Hidden,
 } from "@material-ui/core";
 
 const styles = {
@@ -19,39 +18,41 @@ const insideStyles = {
     transform: "translate(-50%,-50%)"
 };
 
-const image1 =
-    "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
 
-
-function MyParallax (props) {
-    return (
-        <Parallax style={{marginTop:'80px'}} bgImage={image1} strength={500}>
-        <div style={{ height: props.height }}>
-            <div style={insideStyles}>
-                <Typography  style={{textAlign:'center'}} variant="h2"  >
-                    Comunidad Cristiana Casa Luz 
-                </Typography>
-                <Typography
-                    variant="h4"
-                    >
-                    Somos tu familia bienvenido a Casa
-                    </Typography>
-            </div>
-        </div>
-      </Parallax>
-    )
-}
 
 export default function FirstSection () {
     return (
         <div style={styles}>
-            <Hidden smUp>
-            <MyParallax  height={500}/>
-         </Hidden>
-         <Hidden xsDown>
-          <MyParallax  height={800}/>
-         </Hidden>
-    </div>
+            <Parallax 
+                style={{height:'100%',marginTop:'80px'}} 
+                bgImage={`${process.env.PUBLIC_URL}/images/logged_out/iglesia1.jpg`} 
+                strength={500}
+                bgImageAlt={"Bienvenido a Comunidad Cristiana Casa Luz"}
+                renderLayer={() => (
+                <div
+                    style={{
+                        position: 'absolute',
+                        background: 'rgba(0, 0, 0,0.5)',
+                        width:'100%',
+                        height: '100%',
+                    }}
+                />
+            )}
+            >
+                <div style={{ height: '100vh' }}>
+                    <div style={insideStyles}>
+                        <Typography  style={{textAlign:'center'}} variant="h2"  >
+                            <strong>Bienvenido a Casa Luz</strong> 
+                        </Typography>
+                        <Typography
+                            variant="h4"
+                            >
+                            Una luz en tu familia
+                            </Typography>
+                    </div>
+                </div>
+            </Parallax>
+        </div>
     );
 }
   

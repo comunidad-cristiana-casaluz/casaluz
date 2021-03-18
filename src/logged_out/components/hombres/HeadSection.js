@@ -29,12 +29,12 @@ function MyParallax (props) {
             <div style={{ height: props.height }}>
                 <div style={insideStyles}>
                     <Typography  style={{textAlign:'center'}} variant="h2"  >
-                        Comunidad Cristiana Casa Luz 
+                      <strong>Bienvenido a Casa Luz</strong> 
                     </Typography>
                     <Typography
                         variant="h4"
                         >
-                        Somos tu familia bienvenido a Casa
+                        Una luz en tu familia
                         </Typography>
                 </div>
             </div>

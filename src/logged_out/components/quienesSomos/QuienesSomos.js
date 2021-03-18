@@ -4,11 +4,11 @@ import HeadSection from "./HeadSection"
 import Liderazgo from "./Liderazgo"
 import MisionVision from "./MisionVision"
 
-function AcercaDe(props) {
-  const { selectAcercaDe } = props;
+function QuienesSomos(props) {
+  const { selectQuienesSomos } = props;
   useEffect(() => {
-    selectAcercaDe();
-  }, [selectAcercaDe]);
+    selectQuienesSomos();
+  }, [selectQuienesSomos]);
     return (
       <Fragment>
         <HeadSection />
@@ -18,8 +18,8 @@ function AcercaDe(props) {
     );
   }
   
-AcercaDe.propTypes = {
-    selectAcercaDe: PropTypes.func.isRequired
+QuienesSomos.propTypes = {
+    selectQuienesSomos: PropTypes.func.isRequired
 };
   
-  export default AcercaDe;
+  export default QuienesSomos;

@@ -34,7 +34,7 @@ const image3 =
               <Typography
                   variant="h4"
                   >
-                  Somos tu familia bienvenido a Casa
+                  Somos tu familsdsia bienvenido a Casa
                   </Typography>
           </div>
       </div>

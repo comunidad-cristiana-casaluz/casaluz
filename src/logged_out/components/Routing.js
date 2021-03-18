@@ -12,11 +12,11 @@ import Mujeres from "./mujeres/Mujeres";
 import Hombres from "./hombres/Hombres";
 import Matrimonios from "./matrimonios/Matrimonios";
 import Cursos from "./cursos/Cursos";
-import AcercaDe from "./acercade/AcercaDe";
+import QuienesSomos from "./quienesSomos/QuienesSomos";
 
 function Routing(props) {
   const { blogPosts, selectBlog, selectHome,selectMatrimonios, 
-    selectCursos, selectHombres,selectJovenes, selectMujeres, selectAcercaDe,
+    selectCursos, selectHombres,selectJovenes, selectMujeres, selectQuienesSomos,
     selectNiños, selectCasasLuz } = props;
   return (
     <Switch>
@@ -55,9 +55,9 @@ function Routing(props) {
       />
       <PropsRoute
         exact
-        path="/acercade"
-        component={AcercaDe}
-        selectAcercaDe = {selectAcercaDe}
+        path="/quienes-somos"
+        component={QuienesSomos}
+        selectQuienesSomos = {selectQuienesSomos}
       />
       <PropsRoute
         exact
@@ -101,7 +101,7 @@ Routing.propTypes = {
   selectBlog: PropTypes.func.isRequired,
   selectHombres: PropTypes.func.isRequired,
   selectCasasLuz: PropTypes.func.isRequired,
-  selectAcercaDe: PropTypes.func.isRequired,
+  selectQuienesSomos: PropTypes.func.isRequired,
   selectMujeres: PropTypes.func.isRequired,
   selectNiños: PropTypes.func.isRequired,
   selectJovenes: PropTypes.func.isRequired,

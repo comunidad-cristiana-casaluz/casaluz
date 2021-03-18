@@ -52,12 +52,12 @@ function NavBar(props) {
   } = props;
   const menuItems = [
     {
-      link: "/casaluz",
+      link: "/",
       name: "Inicio"
     },
     {
-      link: "/acercade",
-      name: "Acerca de LPN"
+      link: "/quienes-somos",
+      name: "Quienes somos"
     },
     {
       link: "/casasLuz",
@@ -92,10 +92,10 @@ function NavBar(props) {
       link: "/blog",
       name: "Blog"
     },
-    {
-      link: "/cursos",
-      name: "Cursos"
-    }
+    // {
+    //   link: "/cursos",
+    //   name: "Cursos"
+    // }
     // {
     //   name: "Register",
     //   onClick: openRegisterDialog
@@ -145,7 +145,7 @@ function NavBar(props) {
           
           <Hidden smDown >
           <div style={{paddingLeft:'100px'}} >
-            <img align="center" height="90" width="90" alt=""  src={`${process.env.PUBLIC_URL}/logo.png`}  />
+            <Link to="/" ><img align="center" height="90" width="90" alt=""  src={`${process.env.PUBLIC_URL}/logo.png`}  /></Link>
           </div>
           </Hidden >
           
